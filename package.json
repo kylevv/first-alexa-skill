@@ -1,0 +1,26 @@
+{
+  "name": "first-alexa-skill",
+  "version": "1.0.0",
+  "description": "first alexa skill",
+  "main": "index.js",
+  "scripts": {
+    "build": "zip -r -q first-alexa-skill.zip .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylevv/first-alexa-skill.git"
+  },
+  "keywords": [
+    "alexa"
+  ],
+  "author": "kylevv",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kylevv/first-alexa-skill/issues"
+  },
+  "homepage": "https://github.com/kylevv/first-alexa-skill#readme",
+  "devDependencies": {
+    "alexa-sdk": "^1.0.25"
+  }
+}
