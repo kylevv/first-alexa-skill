@@ -1,7 +1,13 @@
 {
   "intents": [
     {
-      "intent": "HelloWorldIntent"
+      "intent": "HelloWorldIntent",
+      "slots": [
+        {
+          "name": "FirstName",
+          "type": "AMAZON.US_FIRST_NAME"
+        }
+      ]
     },
     {
       "intent": "AMAZON.HelpIntent"

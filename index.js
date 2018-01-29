@@ -15,11 +15,17 @@ const handlers = {
     this.emit('SayHello')
   },
   'Greetings': function () {
-    this.response.speak('Greetings!')
+    this.response.speak('Whom would you like me to greet?')
+      .listen('I didn\'t catch that, what was the name?')
     this.emit(':responseReady')
   },
   'SayHello': function () {
-    this.response.speak('Hello World!')
+    if (this.event.request.intent.slots.FirstName.value) {
+      this.response.speak(`Hello ${this.event.request.intent.slots.FirstName.value}!`)
+    } else {
+      this.response.ask('Whom would you like me to greet?')
+        .listen('I didn\'t catch that, what was the name?')
+    }
     this.emit(':responseReady')
   },
   'AMAZON.HelpIntent': function () {

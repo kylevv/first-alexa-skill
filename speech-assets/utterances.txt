@@ -1,3 +1,4 @@
-HelloWorldIntent hello
-HelloWorldIntent say hello
-HelloWorldIntent say hello world
+HelloWorldIntent hello {FirstName}
+HelloWorldIntent say hello to {FirstName}
+HelloWorldIntent say hello {FirstName}
+HelloWorldIntent {FirstName}
